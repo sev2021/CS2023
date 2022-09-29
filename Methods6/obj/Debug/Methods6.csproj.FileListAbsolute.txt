@@ -1,0 +1,8 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\bin\Debug\Methods6.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\bin\Debug\Methods6.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\bin\Debug\Methods6.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\obj\Debug\Methods6.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\obj\Debug\Methods6.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\obj\Debug\Methods6.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\obj\Debug\Methods6.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\Methods6\obj\Debug\Methods6.pdb
