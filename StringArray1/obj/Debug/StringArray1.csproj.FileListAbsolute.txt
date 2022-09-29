@@ -1,0 +1,8 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\bin\Debug\StringArray1.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\bin\Debug\StringArray1.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\bin\Debug\StringArray1.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\obj\Debug\StringArray1.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\obj\Debug\StringArray1.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\obj\Debug\StringArray1.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\obj\Debug\StringArray1.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\StringArray1\obj\Debug\StringArray1.pdb

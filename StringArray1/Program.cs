@@ -8,8 +8,14 @@ namespace StringArray1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            string sen = "Mmmm sss aaa www ee ";
+
+            //foreach(string ss in sen.Split(" ")) Console.WriteLine(ss);
+
+            Console.WriteLine(sen.Replace(" ", ""));
+
         }
     }
 }
