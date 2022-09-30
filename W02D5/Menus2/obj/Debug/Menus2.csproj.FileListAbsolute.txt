@@ -1,0 +1,8 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\bin\Debug\Menus2.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\bin\Debug\Menus2.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\bin\Debug\Menus2.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\obj\Debug\Menus2.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\obj\Debug\Menus2.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\obj\Debug\Menus2.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\obj\Debug\Menus2.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W02D5\Menus2\obj\Debug\Menus2.pdb
