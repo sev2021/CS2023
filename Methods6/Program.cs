@@ -19,13 +19,21 @@ namespace Methods6
             decimal e = 3.44m;
             decimal f = 3.44m;
 
-            Console.WriteLine(Add(22, 33, 44));
-            Console.WriteLine(Add(3.3m, 5.5m));
+            Console.WriteLine(Add(a, b));
+            Console.WriteLine(Add(a, b, c));
+            Console.WriteLine(Add(a, b, c, d));
+            Console.WriteLine(Add(e, f));
         }
 
-        static decimal Add(decimal dec1 = 0, decimal dec2 = 0, int numb1=0, int numb2=0, int numb3=0, int numb4 = 0)
+        static int Add(int numb1 = 0, int numb2 = 0, int numb3 = 0, int numb4 = 0)
+        {
+            return numb1 + numb2 + numb3 + numb4;
+        }
+
+        // method overload
+        static decimal Add(decimal dec1 = 0, decimal dec2 = 0)
         {    
-            return dec1 + dec2 + numb1 + numb2 + numb3 + numb4;
+            return dec1 + dec2;
         }
     }
 }
