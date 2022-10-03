@@ -32,7 +32,7 @@ namespace VerifyPPSN1
 
         static bool PPSNValidator()                 // VALIDATIOR METHOD
         {
-            bool validPPS;
+            bool validPPS = true;
             Console.WriteLine("Loading.....");
             Thread.Sleep(1000);                         // using System.Threading TIMER!!!
             Console.WriteLine("Enter PPS number");
@@ -48,8 +48,7 @@ namespace VerifyPPSN1
             
             string fixedUserInput = userInput.PadRight(9, 'A');  // topping input to length 9
 
-            validPPS = NumbVerify(fixedUserInput, 0, 7); // verify 7 numbers in strig
-            validPPS = LetterVerify(fixedUserInput, 7, 9); // verify 2 letters in strig
+            validPPS = NumbVerify(fixedUserInput, 0, 7) && LetterVerify(fixedUserInput, 7, 9);
 
             Console.WriteLine(validPPS ? "\nPPS IS VALID": "\nPPS IS INVALID");
             return validPPS;
