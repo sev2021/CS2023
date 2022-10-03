@@ -14,14 +14,13 @@ namespace Menus2
             string userInput;
             Boolean doInput = true;
 
-            Console.WriteLine("Please select option from list:"
-                + "\nOption: 1\nOption: 2\nOption: 3\nOption: 4\nExit: e");
-
-            //do userInput = Console.ReadLine();
-            //while (!"1234".Contains(userInput));
 
             while (doInput)
             {
+
+                Console.WriteLine("\nPlease select option from list:\n"
+                    + "\nOption (GuesNumberGame): \t1\nOption (OddEven): \t\t2"
+                    + "\nOption (HangmanGame): \t\t3\nOption (ForHangmanGame): \t4\nExit: \t\t\t\te");
 
                 userInput = Console.ReadLine();
 
@@ -124,20 +123,24 @@ namespace Menus2
             Console.WriteLine(counter == 5 ? "\n***** YOU WIN !!! *****" : "\n***** YOU LOOSE !!! *****");
         }
 
+
         static void ForHangmanGame()
         {
+            string secret = "house";
             string[] result = { "*", "*", "*", "*", "*" };
             int counter = 0;
+            
 
             Console.WriteLine("\nGuess a 5 letter world");
 
-            for (int i = 0; i < 15; i++)
+            for (int i = 15; i > 0; i--)
             {
-                Console.Write($"\nYou have {15 - i} attempts: ");
+                Console.Write($"\nYou have {i} attempts: ");
 
                 string playerInput = Console.ReadLine();
-                int playerIndex = "house".IndexOf(playerInput);
-                Console.WriteLine(playerIndex);
+                int playerIndex = secret.IndexOf(playerInput);
+
+                // Console.WriteLine(playerIndex); // debug
 
                 if (playerIndex > -1)
                 {
@@ -152,6 +155,7 @@ namespace Menus2
             Console.WriteLine(counter == 5 ? "\n**** YOU WIN ****" : "\n**** YOU LOOSE ****");
         }
 
+
         static void OddEven()
         {
             Console.WriteLine("Enter the number:");
@@ -165,6 +169,7 @@ namespace Menus2
             }
 
             Console.WriteLine(userInt % 2 == 1 ? $"Number {userInt} is odd" : $"Number {userInt} is even");
+
         }
     }
 }

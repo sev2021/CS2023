@@ -1,0 +1,8 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\bin\Debug\ThreeGames1.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\bin\Debug\ThreeGames1.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\bin\Debug\ThreeGames1.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\obj\Debug\ThreeGames1.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\obj\Debug\ThreeGames1.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\obj\Debug\ThreeGames1.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\obj\Debug\ThreeGames1.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D1\ThreeGames1\obj\Debug\ThreeGames1.pdb
