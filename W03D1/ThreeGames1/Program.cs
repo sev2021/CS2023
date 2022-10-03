@@ -53,6 +53,7 @@ namespace Menus2
             }
         }
 
+
         static void GuesNumberGame()
         {
             int playerNumb;
@@ -84,7 +85,8 @@ namespace Menus2
 
             }
 
-        }
+        } // GuesNumberGam
+
 
         static void HangmanGame()
         {
@@ -121,7 +123,7 @@ namespace Menus2
             }
 
             Console.WriteLine(counter == 5 ? "\n***** YOU WIN !!! *****" : "\n***** YOU LOOSE !!! *****");
-        }
+        } // HangmanGame
 
 
         static void ForHangmanGame()
@@ -153,7 +155,7 @@ namespace Menus2
             }
 
             Console.WriteLine(counter == 5 ? "\n**** YOU WIN ****" : "\n**** YOU LOOSE ****");
-        }
+        } // ForHangmanGame
 
 
         static void OddEven()
@@ -170,6 +172,6 @@ namespace Menus2
 
             Console.WriteLine(userInt % 2 == 1 ? $"Number {userInt} is odd" : $"Number {userInt} is even");
 
-        }
+        } // OddEven
     }
 }
