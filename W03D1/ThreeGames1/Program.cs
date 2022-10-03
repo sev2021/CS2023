@@ -20,7 +20,8 @@ namespace Menus2
             //do userInput = Console.ReadLine();
             //while (!"1234".Contains(userInput));
 
-            while (doInput) { 
+            while (doInput)
+            {
 
                 userInput = Console.ReadLine();
 
@@ -50,7 +51,7 @@ namespace Menus2
                         doInput = false;
                         break;
                 }
-            } 
+            }
         }
 
         static void GuesNumberGame()
@@ -65,7 +66,8 @@ namespace Menus2
             Console.WriteLine(randNumb);
 
 
-            while (attempts > 0) { /////////////////////////////// game loop
+            while (attempts > 0)
+            { /////////////////////////////// game loop
                 Console.Write($"\nGues a number between 1 and 10.\nYou have {attempts} tries left: ");
 
 
@@ -77,12 +79,12 @@ namespace Menus2
                     Console.WriteLine("\n*********** You Win!! ***********");
                     break;
                 }
-               
-                if(attempts-- == 0)
+
+                if (attempts-- == 0)
                     Console.WriteLine($"\n *** You lose! Secret number is {randNumb} ***");
 
             }
-            
+
         }
 
         static void HangmanGame()
@@ -90,9 +92,9 @@ namespace Menus2
             string[] wordArray = { "house", "water", "plate" };
             Random rand = new Random();
             string guessWord = wordArray[rand.Next(2)];
-            
+
             //string guessWord = "house";
-            string[] userWord = {".", ".", ".", ".", "."};
+            string[] userWord = { ".", ".", ".", ".", "." };
             int attempts = 10;
             int counter = 0;
 
@@ -102,7 +104,7 @@ namespace Menus2
             while (true)
             {
                 Console.Write($"\nYou have {attempts} attempts: ");
-                
+
                 string playerLetter = Console.ReadLine();
                 int playerIndex = guessWord.IndexOf(playerLetter);
 
@@ -119,19 +121,19 @@ namespace Menus2
                 if (counter == 5 || attempts == 0) break;
             }
 
-            Console.WriteLine(counter == 5? "\n***** YOU WIN !!! *****": "\n***** YOU LOOSE !!! *****");
+            Console.WriteLine(counter == 5 ? "\n***** YOU WIN !!! *****" : "\n***** YOU LOOSE !!! *****");
         }
 
         static void ForHangmanGame()
         {
-            string[] result = { "*", "*", "*", "*", "*"};
+            string[] result = { "*", "*", "*", "*", "*" };
             int counter = 0;
 
             Console.WriteLine("\nGuess a 5 letter world");
 
             for (int i = 0; i < 15; i++)
             {
-                Console.Write($"\nYou have {15-i} attempts: ");
+                Console.Write($"\nYou have {15 - i} attempts: ");
 
                 string playerInput = Console.ReadLine();
                 int playerIndex = "house".IndexOf(playerInput);
@@ -143,7 +145,7 @@ namespace Menus2
                     counter++;
                 }
 
-                foreach(string s in result) Console.Write(s);
+                foreach (string s in result) Console.Write(s);
                 if (counter == 5) break;
             }
 
@@ -161,7 +163,7 @@ namespace Menus2
                 Console.WriteLine($"{userInput} is not correct. Enter integer number:");
                 userInput = Console.ReadLine();
             }
-           
+
             Console.WriteLine(userInt % 2 == 1 ? $"Number {userInt} is odd" : $"Number {userInt} is even");
         }
     }
