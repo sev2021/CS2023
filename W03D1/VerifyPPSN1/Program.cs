@@ -30,7 +30,7 @@ namespace VerifyPPSN1
         }
 
 
-        static bool PPSNValidator()                 // VALIDATIOR METHOD
+        static bool PPSNValidator()   //////////////////////////////// VALIDATOR METHOD
         {
             bool validPPS = true;
             Console.WriteLine("Loading.....");
@@ -42,13 +42,14 @@ namespace VerifyPPSN1
 
             if (userInput.Length < 8 || userInput.Length > 9)  // verify input length
             {
-                Console.WriteLine("\nNumber too short or too long.\nIt must be 8 or 9 characters. Try again."); 
-                return false;
+                Console.WriteLine("\nNumber too short or too long.\nIt must be 8 or 9 characters. Try again.");
+                validPPS = false;
             }
-            
-            string fixedUserInput = userInput.PadRight(9, 'A');  // topping input to length 9
-
-            validPPS = NumbVerify(fixedUserInput, 0, 7) && LetterVerify(fixedUserInput, 7, 9);
+            else
+            {
+                string fixedUserInput = userInput.PadRight(9, 'A');  // topping input to length 9
+                validPPS = NumbVerify(fixedUserInput, 0, 7) && LetterVerify(fixedUserInput, 7, 9);
+            }
 
             Console.WriteLine(validPPS ? "\nPPS IS VALID": "\nPPS IS INVALID");
             return validPPS;
