@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace CultureClass
 {
-    public class Car
+    internal class Car
     {
+        static void Main()
+        {
+            Console.WriteLine("THIS IS CAR");
+        }
+
         public string Make { get; set; }
+        public string Model { get; set; }
+        public string WhatAmI()
+        {
+            return "I am a car";
+        }
 
     }
 }

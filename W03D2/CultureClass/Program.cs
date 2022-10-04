@@ -8,11 +8,13 @@ namespace CultureClass
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Car c1 = new Car();
-            Bus b1 = new Bus();
+            Console.WriteLine(c1.WhatAmI());
 
+            Bus b1 = new Bus();
+            Console.WriteLine(b1.WhatAmI());
         }
     }
 
