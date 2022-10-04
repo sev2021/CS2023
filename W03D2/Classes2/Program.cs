@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes1
+namespace Classes2
 {
     internal class Program
     {
@@ -13,12 +13,5 @@ namespace Classes1
 
 
         }
-    }
-
-    class Car
-    {
-        //Properties
-        public bool Bool;
-
     }
 }
