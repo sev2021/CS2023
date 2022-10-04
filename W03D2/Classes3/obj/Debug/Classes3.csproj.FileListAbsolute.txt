@@ -1,0 +1,8 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\obj\Debug\Classes3.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\obj\Debug\Classes3.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\obj\Debug\Classes3.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\bin\Debug\Classes3.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\bin\Debug\Classes3.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\bin\Debug\Classes3.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\obj\Debug\Classes3.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D2\Classes3\obj\Debug\Classes3.pdb
