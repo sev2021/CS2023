@@ -39,19 +39,21 @@
             // 
             // BtnClose
             // 
+            this.BtnClose.BackColor = System.Drawing.Color.DarkRed;
             this.BtnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClose.ForeColor = System.Drawing.Color.Honeydew;
             this.BtnClose.Location = new System.Drawing.Point(433, 517);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(120, 40);
             this.BtnClose.TabIndex = 0;
             this.BtnClose.Text = "Close";
-            this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.UseVisualStyleBackColor = false;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // TxtUser
             // 
             this.TxtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUser.Location = new System.Drawing.Point(228, 148);
+            this.TxtUser.Location = new System.Drawing.Point(228, 146);
             this.TxtUser.Name = "TxtUser";
             this.TxtUser.Size = new System.Drawing.Size(264, 22);
             this.TxtUser.TabIndex = 2;
@@ -59,28 +61,29 @@
             // LabName
             // 
             this.LabName.AutoSize = true;
-            this.LabName.Font = new System.Drawing.Font("Arial Unicode MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabName.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabName.Location = new System.Drawing.Point(104, 143);
             this.LabName.Name = "LabName";
-            this.LabName.Size = new System.Drawing.Size(123, 28);
+            this.LabName.Size = new System.Drawing.Size(111, 25);
             this.LabName.TabIndex = 3;
             this.LabName.Text = "Username: ";
             // 
             // BtnGo
             // 
+            this.BtnGo.BackColor = System.Drawing.Color.GreenYellow;
             this.BtnGo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGo.Location = new System.Drawing.Point(43, 517);
             this.BtnGo.Name = "BtnGo";
             this.BtnGo.Size = new System.Drawing.Size(120, 40);
             this.BtnGo.TabIndex = 0;
             this.BtnGo.Text = "Go";
-            this.BtnGo.UseVisualStyleBackColor = true;
+            this.BtnGo.UseVisualStyleBackColor = false;
             this.BtnGo.Click += new System.EventHandler(this.BtnGo_Click);
             // 
             // TxtPass
             // 
             this.TxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPass.Location = new System.Drawing.Point(228, 191);
+            this.TxtPass.Location = new System.Drawing.Point(228, 189);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.PasswordChar = '*';
             this.TxtPass.Size = new System.Drawing.Size(171, 22);
@@ -89,16 +92,17 @@
             // LabPass
             // 
             this.LabPass.AutoSize = true;
-            this.LabPass.Font = new System.Drawing.Font("Arial Unicode MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabPass.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabPass.Location = new System.Drawing.Point(104, 187);
             this.LabPass.Name = "LabPass";
-            this.LabPass.Size = new System.Drawing.Size(112, 28);
+            this.LabPass.Size = new System.Drawing.Size(103, 25);
             this.LabPass.TabIndex = 3;
             this.LabPass.Text = "Password:";
             // 
             // LabResult
             // 
             this.LabResult.AutoEllipsis = true;
+            this.LabResult.BackColor = System.Drawing.Color.Silver;
             this.LabResult.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabResult.ForeColor = System.Drawing.Color.Red;
             this.LabResult.Location = new System.Drawing.Point(113, 249);
@@ -111,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(598, 585);
             this.Controls.Add(this.LabResult);
             this.Controls.Add(this.LabPass);
