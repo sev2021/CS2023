@@ -3,9 +3,9 @@ C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\bin\Debug\MyFirstF
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\bin\Debug\MyFirstForm.pdb
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.csproj.AssemblyReference.cache
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.csproj.SuggestedBindingRedirects.cache
-C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.Form1.resources
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.Properties.Resources.resources
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.csproj.GenerateResource.cache
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.csproj.CoreCompileInputs.cache
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.exe
 C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D3\MyFirstForm\obj\Debug\MyFirstForm.MyFirstForm.resources
