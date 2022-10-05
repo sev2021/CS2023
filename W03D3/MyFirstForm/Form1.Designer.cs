@@ -39,7 +39,7 @@
             // 
             // BtnClose
             // 
-            this.BtnClose.BackColor = System.Drawing.Color.DarkRed;
+            this.BtnClose.BackColor = System.Drawing.Color.Red;
             this.BtnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClose.ForeColor = System.Drawing.Color.Honeydew;
             this.BtnClose.Location = new System.Drawing.Point(433, 517);
@@ -49,6 +49,8 @@
             this.BtnClose.Text = "Close";
             this.BtnClose.UseVisualStyleBackColor = false;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            this.BtnClose.MouseLeave += new System.EventHandler(this.BtnClose_Leave);
+            this.BtnClose.MouseHover += new System.EventHandler(this.BtnClose_Hover);
             // 
             // TxtUser
             // 
@@ -109,6 +111,7 @@
             this.LabResult.Name = "LabResult";
             this.LabResult.Size = new System.Drawing.Size(388, 154);
             this.LabResult.TabIndex = 3;
+            this.LabResult.Text = "LabResult";
             this.LabResult.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // MyFirstForm
@@ -126,7 +129,7 @@
             this.Controls.Add(this.BtnClose);
             this.Name = "MyFirstForm";
             this.Text = "My First Form";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MyFirstForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
