@@ -10,6 +10,15 @@ namespace Classes1
     {
         static void Main(string[] args)
         {
+
+
         }
+    }
+
+    class Car
+    {
+        //Properties
+        public bool Bool;
+
     }
 }
