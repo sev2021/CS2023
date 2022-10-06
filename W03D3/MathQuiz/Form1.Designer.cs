@@ -179,6 +179,7 @@
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(120, 31);
             this.difference.TabIndex = 2;
+            this.difference.ValueChanged += new System.EventHandler(this.difference_ValueChanged);
             // 
             // timesRightLabel
             // 
@@ -228,6 +229,7 @@
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(120, 31);
             this.product.TabIndex = 3;
+            this.product.ValueChanged += new System.EventHandler(this.product_ValueChanged);
             // 
             // dividedRightLabel
             // 
@@ -277,6 +279,7 @@
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(120, 31);
             this.quotient.TabIndex = 4;
+            this.quotient.ValueChanged += new System.EventHandler(this.quotient_ValueChanged);
             // 
             // startButton
             // 
