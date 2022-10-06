@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,6 +42,9 @@ namespace MathQuiz
         // This integer variable keeps track of the 
         // remaining time.
         int timeLeft;
+
+        // https://learn.microsoft.com/en-us/dotnet/api/system.media.systemsounds.beep?view=windowsdesktop-6.0
+        public static System.Media.SystemSound Beep { get; }
 
 
         public Form1() // // CONSTRUCTOR
@@ -92,8 +96,8 @@ namespace MathQuiz
             quotient.Value = 0;
 
             // Start the timer.
-            timeLeft = 30;
-            timeLabel.Text = "30 seconds";
+            timeLeft = 20;
+            timeLabel.Text = timeLeft + " seconds";
             timer1.Start();
         }
 
@@ -102,6 +106,12 @@ namespace MathQuiz
         {
             StartTheQuiz();
             startButton.Enabled = false;
+            timeLabel.BackColor = SystemColors.Control;
+            timeLabel.ForeColor = SystemColors.ActiveCaptionText;
+            sum.Enabled = true;
+            difference.Enabled = true;
+            product.Enabled = true;
+            quotient.Enabled = true;
         }
 
         private bool CheckTheAnswer() // Check the answers if the user got everything right
@@ -133,8 +143,13 @@ namespace MathQuiz
                 // down. Decrease the time left by one second and 
                 // display the new time left by updating the 
                 // Time Left label.
-                timeLeft = timeLeft - 1;
+                timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
+                if (timeLeft < 6)
+                {
+                    timeLabel.BackColor = Color.Red;
+                    timeLabel.ForeColor = Color.White;
+                }
             }
             else
             {
@@ -150,7 +165,47 @@ namespace MathQuiz
                 startButton.Enabled = true;
             }
         }
+
+        private void sum_ValueChanged(object sender, EventArgs e)
+        {
+            if (addend1 + addend2 == sum.Value && startButton.Enabled == false)
+            {
+                sum.BackColor = SystemColors.InactiveCaption;
+                SystemSounds.Beep.Play();
+            }
+            else sum.BackColor = SystemColors.Window;
+        }
+
+        private void difference_ValueChanged(object sender, EventArgs e)
+        {
+            if (minuend - subtrahend == difference.Value && startButton.Enabled == false)
+            {
+                timeLeft = timeLeft + 10;
+                difference.BackColor = SystemColors.InactiveCaption;
+                SystemSounds.Beep.Play();
+            }
+            else difference.BackColor = SystemColors.Window;
+        }
+
+        private void product_ValueChanged(object sender, EventArgs e)
+        {
+            if (multiplicand * multiplier == product.Value && startButton.Enabled == false)
+            {
+                product.BackColor = SystemColors.InactiveCaption;
+                SystemSounds.Beep.Play();
+            }
+            else product.BackColor = SystemColors.Window;
+        }
+
+        private void quotient_ValueChanged(object sender, EventArgs e)
+        {
+            if (dividend / divisor == quotient.Value && startButton.Enabled == false)
+            {
+                quotient.BackColor = SystemColors.InactiveCaption;
+                SystemSounds.Beep.Play();
+            }
+            else quotient.BackColor = SystemColors.Window;
+        }
+
     }
-
-
 }

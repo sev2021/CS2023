@@ -61,12 +61,15 @@
             // 
             // timeLabel
             // 
+            this.timeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.timeLabel.Location = new System.Drawing.Point(371, 30);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(200, 30);
             this.timeLabel.TabIndex = 0;
+            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -110,11 +113,13 @@
             // 
             // sum
             // 
+            this.sum.Enabled = false;
             this.sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sum.Location = new System.Drawing.Point(371, 103);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(120, 31);
             this.sum.TabIndex = 1;
+            this.sum.ValueChanged += new System.EventHandler(this.sum_ValueChanged);
             // 
             // label3
             // 
@@ -168,6 +173,7 @@
             // 
             // difference
             // 
+            this.difference.Enabled = false;
             this.difference.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.difference.Location = new System.Drawing.Point(371, 163);
             this.difference.Name = "difference";
@@ -216,6 +222,7 @@
             // 
             // product
             // 
+            this.product.Enabled = false;
             this.product.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.product.Location = new System.Drawing.Point(371, 222);
             this.product.Name = "product";
@@ -264,6 +271,7 @@
             // 
             // quotient
             // 
+            this.quotient.Enabled = false;
             this.quotient.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quotient.Location = new System.Drawing.Point(371, 281);
             this.quotient.Name = "quotient";
