@@ -1,4 +1,8 @@
-﻿using System;
+// link
+// https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-windows-forms-math-quiz-create-project-add-controls
+//
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
