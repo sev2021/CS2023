@@ -1,0 +1,26 @@
+USE Hire
+GO
+
+CREATE TABLE [dbo].[tblCar]
+(
+    [VehicleRegNo] NCHAR(10) NOT NULL PRIMARY KEY, 
+    [Make] NVARCHAR(50) NULL, 
+    [Engine Size] NVARCHAR(10) NULL, 
+    [DateRegistered] DATE NULL, 
+    [RentalPerDay] MONEY NULL, 
+    [Available] BIT NULL
+)
+
+
+GO
+
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'08D52369  ', N'Ford Transit', N'1.8L', N'2008-02-09', CAST(80.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'11MN4567  ', N'Toyota Auris', N'1.4L', N'2011-02-05', CAST(50.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'11K45621  ', N'Ford Mondeo', N'2.0L', N'2011-11-11', CAST(95.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'09WW15896 ', N'VolkWagan Passat', N'1.6L', N'2009-08-05', CAST(50.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'04D245698 ', N'Ford Fiesta', N'1.0L', N'2004-02-06', CAST(30.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'05D41147  ', N'Kia Rio', N'1.2L', N'2005-07-02', CAST(30.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'07G35789  ', N'Mitsubishi Mirage', N'1.2L', N'2006-12-31', CAST(30.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'02G4587   ', N'Ford Focus', N'1.4L', N'2002-03-27', CAST(45.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'05MN45623 ', N'Toyota Corolla', N'1.4L', N'2005-03-06', CAST(45.0000 AS Money), 1)
+INSERT INTO [dbo].[tblCar] ([VehicleRegNo], [Make], [Engine Size], [DateRegistered], [RentalPerDay], [Available]) VALUES (N'15D44178  ', N'Honda Accord', N'2.0L', N'2015-08-22', CAST(95.0000 AS Money), 1)
