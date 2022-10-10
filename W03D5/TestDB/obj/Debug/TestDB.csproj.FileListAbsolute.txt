@@ -1,0 +1,13 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\bin\Debug\TestServiceBasedDatabase.mdf
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\bin\Debug\TestServiceBasedDatabase_log.ldf
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\bin\Debug\TestDB.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\bin\Debug\TestDB.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\bin\Debug\TestDB.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.TestForm.resources
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.Properties.Resources.resources
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.csproj.GenerateResource.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W03D5\TestDB\obj\Debug\TestDB.pdb

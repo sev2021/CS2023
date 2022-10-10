@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TxtRegNo = new System.Windows.Forms.TextBox();
+            this.tblCarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hireDataSet1 = new CarsDB.HireDataSet();
             this.TxtMake = new System.Windows.Forms.TextBox();
             this.TxtEngine = new System.Windows.Forms.TextBox();
             this.TxtRegDate = new System.Windows.Forms.TextBox();
@@ -53,11 +55,9 @@
             this.BtnExit = new System.Windows.Forms.Button();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.TxtRecordNum = new System.Windows.Forms.TextBox();
-            this.hireDataSet1 = new CarsDB.HireDataSet();
-            this.tblCarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCarTableAdapter = new CarsDB.HireDataSetTableAdapters.tblCarTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.hireDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hireDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtRegNo
@@ -68,6 +68,16 @@
             this.TxtRegNo.Name = "TxtRegNo";
             this.TxtRegNo.Size = new System.Drawing.Size(150, 26);
             this.TxtRegNo.TabIndex = 0;
+            // 
+            // tblCarBindingSource
+            // 
+            this.tblCarBindingSource.DataMember = "tblCar";
+            this.tblCarBindingSource.DataSource = this.hireDataSet1;
+            // 
+            // hireDataSet1
+            // 
+            this.hireDataSet1.DataSetName = "HireDataSet";
+            this.hireDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // TxtMake
             // 
@@ -317,16 +327,6 @@
             this.TxtRecordNum.Size = new System.Drawing.Size(150, 26);
             this.TxtRecordNum.TabIndex = 0;
             // 
-            // hireDataSet1
-            // 
-            this.hireDataSet1.DataSetName = "HireDataSet";
-            this.hireDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblCarBindingSource
-            // 
-            this.tblCarBindingSource.DataMember = "tblCar";
-            this.tblCarBindingSource.DataSource = this.hireDataSet1;
-            // 
             // tblCarTableAdapter
             // 
             this.tblCarTableAdapter.ClearBeforeFill = true;
@@ -364,8 +364,8 @@
             this.Name = "FrmCars";
             this.Text = "Engine Size";
             this.Load += new System.EventHandler(this.FrmCars_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hireDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hireDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
