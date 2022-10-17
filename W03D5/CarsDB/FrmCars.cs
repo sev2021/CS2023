@@ -16,5 +16,12 @@ namespace CarsDB
         {
             InitializeComponent();
         }
+
+        private void FrmCars_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'hireDataSet1.tblCar' table. You can move, or remove it, as needed.
+            this.tblCarTableAdapter.Fill(this.hireDataSet1.tblCar);
+
+        }
     }
 }
