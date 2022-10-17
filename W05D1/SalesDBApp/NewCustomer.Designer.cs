@@ -96,7 +96,7 @@
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.ReadOnly = true;
             this.txtCustomerID.Size = new System.Drawing.Size(100, 22);
-            this.txtCustomerID.TabIndex = 1;
+            this.txtCustomerID.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -109,7 +109,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(270, 110);
-            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Create Order";
             // 
@@ -182,7 +182,7 @@
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.btnPlaceOrder.Size = new System.Drawing.Size(119, 26);
-            this.btnPlaceOrder.TabIndex = 1;
+            this.btnPlaceOrder.TabIndex = 3;
             this.btnPlaceOrder.Text = "Place Order";
             this.btnPlaceOrder.UseVisualStyleBackColor = true;
             // 
@@ -193,7 +193,7 @@
             this.btnAddAnotherAccount.Name = "btnAddAnotherAccount";
             this.btnAddAnotherAccount.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.btnAddAnotherAccount.Size = new System.Drawing.Size(172, 26);
-            this.btnAddAnotherAccount.TabIndex = 1;
+            this.btnAddAnotherAccount.TabIndex = 4;
             this.btnAddAnotherAccount.Text = "Add Another Account";
             this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
             // 
@@ -204,9 +204,10 @@
             this.btnAddFinish.Name = "btnAddFinish";
             this.btnAddFinish.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.btnAddFinish.Size = new System.Drawing.Size(90, 26);
-            this.btnAddFinish.TabIndex = 1;
+            this.btnAddFinish.TabIndex = 5;
             this.btnAddFinish.Text = "Finish";
             this.btnAddFinish.UseVisualStyleBackColor = true;
+            this.btnAddFinish.Click += new System.EventHandler(this.btnAddFinish_Click);
             // 
             // NewCustomer
             // 

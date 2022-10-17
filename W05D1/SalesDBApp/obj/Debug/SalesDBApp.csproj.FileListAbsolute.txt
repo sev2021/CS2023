@@ -10,3 +10,4 @@ C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBAp
 C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.csproj.CoreCompileInputs.cache
 C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.exe
 C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.FillOrCancel.resources

@@ -16,5 +16,10 @@ namespace SalesDBApp
         {
             InitializeComponent();
         }
+
+        private void btnAddFinish_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

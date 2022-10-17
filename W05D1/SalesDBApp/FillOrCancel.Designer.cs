@@ -53,12 +53,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 99);
+            this.label2.Location = new System.Drawing.Point(16, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 16);
+            this.label2.Size = new System.Drawing.Size(209, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Order Date";
+            this.label2.Text = "If filling an order, specify filled date";
             // 
             // txtOrderID
             // 
@@ -70,7 +70,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(284, 99);
+            this.dateTimePicker1.Location = new System.Drawing.Point(237, 99);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(150, 22);
             this.dateTimePicker1.TabIndex = 2;

@@ -58,7 +58,7 @@
             // btnGoToAdd
             // 
             this.btnGoToAdd.AutoSize = true;
-            this.btnGoToAdd.Location = new System.Drawing.Point(127, 94);
+            this.btnGoToAdd.Location = new System.Drawing.Point(130, 94);
             this.btnGoToAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGoToAdd.Name = "btnGoToAdd";
             this.btnGoToAdd.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
@@ -66,6 +66,7 @@
             this.btnGoToAdd.TabIndex = 1;
             this.btnGoToAdd.Text = "Add an account";
             this.btnGoToAdd.UseVisualStyleBackColor = true;
+            this.btnGoToAdd.Click += new System.EventHandler(this.btnGoToAdd_Click);
             // 
             // btnGoToFillOrCancel
             // 
@@ -78,6 +79,7 @@
             this.btnGoToFillOrCancel.TabIndex = 2;
             this.btnGoToFillOrCancel.Text = "Fill or cancel an order";
             this.btnGoToFillOrCancel.UseVisualStyleBackColor = true;
+            this.btnGoToFillOrCancel.Click += new System.EventHandler(this.btnGoToFillOrCancel_Click);
             // 
             // Navigation
             // 

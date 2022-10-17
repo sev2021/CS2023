@@ -16,5 +16,18 @@ namespace SalesDBApp
         {
             InitializeComponent();
         }
+
+        private void btnGoToAdd_Click(object sender, EventArgs e)
+        {
+            NewCustomer myNewCustomer = new NewCustomer();
+            myNewCustomer.ShowDialog(this);
+
+        }
+
+        private void btnGoToFillOrCancel_Click(object sender, EventArgs e)
+        {
+            FillOrCancel myFillOrCancel = new FillOrCancel();
+            myFillOrCancel.ShowDialog(this);
+        }
     }
 }
