@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SalesDBApp
 {
-    public partial class Form1 : Form
+    public partial class Navigation : Form
     {
-        public Form1()
+        public Navigation()
         {
             InitializeComponent();
         }
