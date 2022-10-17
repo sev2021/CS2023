@@ -38,7 +38,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 31);
+            this.label1.Location = new System.Drawing.Point(35, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 16);
             this.label1.TabIndex = 0;
@@ -46,9 +47,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(278, 234);
+            this.btnExit.Location = new System.Drawing.Point(304, 245);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(100, 28);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -56,10 +58,11 @@
             // btnGoToAdd
             // 
             this.btnGoToAdd.AutoSize = true;
-            this.btnGoToAdd.Location = new System.Drawing.Point(128, 102);
+            this.btnGoToAdd.Location = new System.Drawing.Point(127, 94);
+            this.btnGoToAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGoToAdd.Name = "btnGoToAdd";
-            this.btnGoToAdd.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btnGoToAdd.Size = new System.Drawing.Size(123, 28);
+            this.btnGoToAdd.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnGoToAdd.Size = new System.Drawing.Size(164, 34);
             this.btnGoToAdd.TabIndex = 1;
             this.btnGoToAdd.Text = "Add an account";
             this.btnGoToAdd.UseVisualStyleBackColor = true;
@@ -67,24 +70,26 @@
             // btnGoToFillOrCancel
             // 
             this.btnGoToFillOrCancel.AutoSize = true;
-            this.btnGoToFillOrCancel.Location = new System.Drawing.Point(117, 147);
+            this.btnGoToFillOrCancel.Location = new System.Drawing.Point(112, 153);
+            this.btnGoToFillOrCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGoToFillOrCancel.Name = "btnGoToFillOrCancel";
-            this.btnGoToFillOrCancel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btnGoToFillOrCancel.Size = new System.Drawing.Size(152, 28);
+            this.btnGoToFillOrCancel.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnGoToFillOrCancel.Size = new System.Drawing.Size(203, 34);
             this.btnGoToFillOrCancel.TabIndex = 2;
             this.btnGoToFillOrCancel.Text = "Fill or cancel an order";
             this.btnGoToFillOrCancel.UseVisualStyleBackColor = true;
             // 
             // Navigation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 279);
+            this.ClientSize = new System.Drawing.Size(432, 301);
             this.Controls.Add(this.btnGoToFillOrCancel);
             this.Controls.Add(this.btnGoToAdd);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Navigation";
             this.Text = "Welcome";
             this.ResumeLayout(false);
