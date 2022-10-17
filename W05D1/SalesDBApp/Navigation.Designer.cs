@@ -49,7 +49,7 @@
             this.btnExit.Location = new System.Drawing.Point(278, 234);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 1;
+            this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
@@ -71,7 +71,7 @@
             this.btnGoToFillOrCancel.Name = "btnGoToFillOrCancel";
             this.btnGoToFillOrCancel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.btnGoToFillOrCancel.Size = new System.Drawing.Size(152, 28);
-            this.btnGoToFillOrCancel.TabIndex = 1;
+            this.btnGoToFillOrCancel.TabIndex = 2;
             this.btnGoToFillOrCancel.Text = "Fill or cancel an order";
             this.btnGoToFillOrCancel.UseVisualStyleBackColor = true;
             // 

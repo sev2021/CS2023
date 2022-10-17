@@ -1,0 +1,12 @@
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\bin\Debug\SalesDBApp.exe.config
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\bin\Debug\SalesDBApp.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\bin\Debug\SalesDBApp.pdb
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.csproj.AssemblyReference.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.Navigation.resources
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.NewCustomer.resources
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.Properties.Resources.resources
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.csproj.GenerateResource.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.csproj.CoreCompileInputs.cache
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.exe
+C:\Users\sapinskise\source\repos\sev2023\CS\W05D1\SalesDBApp\obj\Debug\SalesDBApp.pdb
