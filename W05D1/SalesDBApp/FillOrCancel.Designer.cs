@@ -93,6 +93,7 @@
             this.btnFinishUpdates.TabIndex = 4;
             this.btnFinishUpdates.Text = "Finish";
             this.btnFinishUpdates.UseVisualStyleBackColor = true;
+            this.btnFinishUpdates.Click += new System.EventHandler(this.btnFinishUpdates_Click);
             // 
             // btnFillOrder
             // 

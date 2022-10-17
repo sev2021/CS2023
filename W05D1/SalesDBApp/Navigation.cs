@@ -17,17 +17,29 @@ namespace SalesDBApp
             InitializeComponent();
         }
 
+        /// <summary>
+        ///     Method to create an instance ofthe NewCustomer() form
+        ///     Show() opens the NewCustomer form while allowing
+        ///     access to Navigation() form
+        /// </summary>
+
         private void btnGoToAdd_Click(object sender, EventArgs e)
         {
-            NewCustomer myNewCustomer = new NewCustomer();
-            myNewCustomer.ShowDialog(this);
+            Form myNewCustomer = new NewCustomer();
+            //myNewCustomer.ShowDialog(this);
+            myNewCustomer.Show();
 
         }
 
         private void btnGoToFillOrCancel_Click(object sender, EventArgs e)
         {
-            FillOrCancel myFillOrCancel = new FillOrCancel();
-            myFillOrCancel.ShowDialog(this);
+            Form myFillOrCancel = new FillOrCancel();
+            myFillOrCancel.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
