@@ -90,6 +90,15 @@ namespace SalesDBApp
                     cmd.Parameters.Add(new SqlParameter("@CustomerID", SqlDbType.Int));
                     cmd.Parameters["@CustomerID"].Value = parsedCustId;
 
+                    // add order Date Ubput Parameter
+
+
+                    // add Status Input Parameter
+
+
+                    // add return value
+
+
                 }
             } // end of Create connection to Database
         }// end of btnPlaceOrder_Click() event
