@@ -14,7 +14,8 @@ namespace SalesDBApp
     public partial class NewCustomer : Form
     {
         //declare variables
-        private int parsedCustId; // preset value for user input
+        private int parsedCustId;   // preset value for user input
+        private int orderID;        // preset value for user input
 
         public NewCustomer()
         {
@@ -90,13 +91,43 @@ namespace SalesDBApp
                     cmd.Parameters.Add(new SqlParameter("@CustomerID", SqlDbType.Int));
                     cmd.Parameters["@CustomerID"].Value = parsedCustId;
 
-                    // add order Date Ubput Parameter
+                    // add order Amount input Parameter
+                    cmd.Parameters.Add(new SqlParameter("@Amount", SqlDbType.Int));
+                    cmd.Parameters["@Amount"].Value = numOrderAmount.Value;
 
+                    // add order Date input Parameter
+                    cmd.Parameters.Add(new SqlParameter("@OrderDate", SqlDbType.DateTime, 8));
+                    cmd.Parameters["@OrderDate"].Value = dtpOrderDate.Value;
 
                     // add Status Input Parameter
+                    cmd.Parameters.Add(new SqlParameter("@Status", SqlDbType.Char, 1));
+                    cmd.Parameters["@Status"].Value = "O";
 
+                    // add return value parameter
+                    cmd.Parameters.Add(new SqlParameter("@RC", SqlDbType.Int));
+                    cmd.Parameters["@RC"].Direction = ParameterDirection.ReturnValue;
 
-                    // add return value
+                    try
+                    {
+
+                        conn.Open(); // open connection to DB
+                        cmd.ExecuteNonQuery();
+                        orderID = (int)cmd.Parameters["@RC"].Value;
+
+                        MessageBox.Show("Order nummber " + orderID + " has been submitted.");
+
+                        txtCustomerID.Text = Convert.ToString(parsedCustId);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("OlderID not placed, please check connnection to DB.");
+                        MessageBox.Show(ex.ToString());
+                    }
+                    finally
+                    {
+                        conn.Close();  // close connectino to DB
+                    }
+
 
 
                 }
