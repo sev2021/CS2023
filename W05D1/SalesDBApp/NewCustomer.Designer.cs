@@ -117,6 +117,8 @@
             // 
             this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpOrderDate.Location = new System.Drawing.Point(135, 69);
+            this.dtpOrderDate.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.dtpOrderDate.MinDate = new System.DateTime(2005, 2, 1, 0, 0, 0, 0);
             this.dtpOrderDate.Name = "dtpOrderDate";
             this.dtpOrderDate.Size = new System.Drawing.Size(120, 22);
             this.dtpOrderDate.TabIndex = 2;
@@ -133,11 +135,6 @@
             this.numOrderAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numOrderAmount.Size = new System.Drawing.Size(120, 22);
             this.numOrderAmount.TabIndex = 1;
-            this.numOrderAmount.Value = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
             // 
             // label3
             // 
@@ -193,6 +190,7 @@
             this.btnAddAnotherAccount.TabIndex = 4;
             this.btnAddAnotherAccount.Text = "Add Another Account";
             this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
+            this.btnAddAnotherAccount.Click += new System.EventHandler(this.btnAddAnotherAccount_Click);
             // 
             // btnAddFinish
             // 
