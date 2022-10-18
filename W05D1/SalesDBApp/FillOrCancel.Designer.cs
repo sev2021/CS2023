@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtOrderID = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFillDate = new System.Windows.Forms.DateTimePicker();
             this.dgvCustomersOrders = new System.Windows.Forms.DataGridView();
             this.btnFinishUpdates = new System.Windows.Forms.Button();
             this.btnFillOrder = new System.Windows.Forms.Button();
@@ -67,26 +67,26 @@
             this.txtOrderID.Size = new System.Drawing.Size(120, 22);
             this.txtOrderID.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dtpFillDate
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(237, 99);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(150, 22);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtpFillDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFillDate.Location = new System.Drawing.Point(237, 99);
+            this.dtpFillDate.Name = "dtpFillDate";
+            this.dtpFillDate.Size = new System.Drawing.Size(150, 22);
+            this.dtpFillDate.TabIndex = 2;
             // 
             // dgvCustomersOrders
             // 
             this.dgvCustomersOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomersOrders.Location = new System.Drawing.Point(12, 140);
             this.dgvCustomersOrders.Name = "dgvCustomersOrders";
-            this.dgvCustomersOrders.Size = new System.Drawing.Size(461, 174);
+            this.dgvCustomersOrders.Size = new System.Drawing.Size(656, 174);
             this.dgvCustomersOrders.TabIndex = 3;
             // 
             // btnFinishUpdates
             // 
             this.btnFinishUpdates.AutoSize = true;
-            this.btnFinishUpdates.Location = new System.Drawing.Point(383, 342);
+            this.btnFinishUpdates.Location = new System.Drawing.Point(578, 342);
             this.btnFinishUpdates.Name = "btnFinishUpdates";
             this.btnFinishUpdates.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.btnFinishUpdates.Size = new System.Drawing.Size(90, 26);
@@ -135,13 +135,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 385);
+            this.ClientSize = new System.Drawing.Size(680, 385);
             this.Controls.Add(this.btnFindByOrderID);
             this.Controls.Add(this.btnCancelOrder);
             this.Controls.Add(this.btnFillOrder);
             this.Controls.Add(this.btnFinishUpdates);
             this.Controls.Add(this.dgvCustomersOrders);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFillDate);
             this.Controls.Add(this.txtOrderID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -160,7 +160,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtOrderID;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFillDate;
         private System.Windows.Forms.DataGridView dgvCustomersOrders;
         private System.Windows.Forms.Button btnFinishUpdates;
         private System.Windows.Forms.Button btnFillOrder;

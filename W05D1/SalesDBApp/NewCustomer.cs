@@ -14,7 +14,7 @@ namespace SalesDBApp
     public partial class NewCustomer : Form
     {
         //declare variables
-        private int parsedCustId = 0;   // preset value for user input
+        private int parsedCustId;   // preset value for user input
         private int orderID;        // preset value for user input
 
         public NewCustomer()
@@ -37,7 +37,6 @@ namespace SalesDBApp
             /// <summary>
             /// Validate Input
             /// </summary>
-
             if (txtCustomerName.Text.Trim() == "")
             {
                 MessageBox.Show("Customer Name invalid", 
@@ -70,7 +69,7 @@ namespace SalesDBApp
             {
 
                 conn.Open(); // open connection to DB
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery(); // runs Stored Procedures 
                 parsedCustId = (int)cmd.Parameters["@CustomerID"].Value;
 
                 txtCustomerID.Text = Convert.ToString(parsedCustId);
@@ -99,7 +98,6 @@ namespace SalesDBApp
             /// <summary>
             /// Validate Input
             /// </summary>
-
             if (txtCustomerID.Text.Trim() == "")
             {
                 MessageBox.Show("Customer Account must be created before placing the order",
@@ -108,7 +106,6 @@ namespace SalesDBApp
                     MessageBoxIcon.Warning);
                 return;
             }
-
             if (numOrderAmount.Value == 0)
             {
                 MessageBox.Show("Order Amount must be greater than 1",
@@ -121,7 +118,6 @@ namespace SalesDBApp
 
             // Create connection to Database
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connString);
-
             // Create command with name "cmd"
             SqlCommand cmd = new SqlCommand("Sales.uspPlaceNewOrder", conn);
 
@@ -151,7 +147,7 @@ namespace SalesDBApp
             {
 
                 conn.Open(); // open connection to DB
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery(); // runs Stored Procedures 
                 orderID = (int)cmd.Parameters["@RC"].Value;
 
                 MessageBox.Show("Order nummber " + orderID + " has been submitted.");
