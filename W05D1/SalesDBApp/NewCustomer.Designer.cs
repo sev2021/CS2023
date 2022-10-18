@@ -122,6 +122,7 @@
             this.dtpOrderDate.Name = "dtpOrderDate";
             this.dtpOrderDate.Size = new System.Drawing.Size(120, 22);
             this.dtpOrderDate.TabIndex = 2;
+            this.dtpOrderDate.Value = new System.DateTime(2022, 10, 18, 11, 20, 1, 0);
             // 
             // numOrderAmount
             // 

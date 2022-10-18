@@ -27,22 +27,26 @@ namespace SalesDBApp
             Close();
         }
 
-
-        ////////////////////////////////////////////////////////////////
-        //         [Create Account] button click event
-        ////////////////////////////////////////////////////////////////
+        /// <summary>
+        ///              [Create Account] button click event
+        /// </summary>
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {
 
-            // validate input
-            if(txtCustomerName.Text.ToString().Trim() == "")
+
+            /// <summary>
+            /// Validate Input
+            /// </summary>
+
+            if (txtCustomerName.Text.Trim() == "")
             {
                 MessageBox.Show("Customer Name invalid", 
                     "Warning", 
-                    MessageBoxButtons.OK, 
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
+
 
             // Create connection to Database
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connString);
@@ -82,14 +86,39 @@ namespace SalesDBApp
             }
 
 
+
         } // end of btnCreateAccount_Click() event
 
 
-        /////////////////////////////////////////////////////////////
-        //           [Place Order] button click event
-        /////////////////////////////////////////////////////////////
+        /// <summary>
+        ///            [Place Order] button click event
+        /// </summary>
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
+
+            /// <summary>
+            /// Validate Input
+            /// </summary>
+
+            if (txtCustomerID.Text.Trim() == "")
+            {
+                MessageBox.Show("Customer Account must be created before placing the order",
+                    "Warning",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (numOrderAmount.Value == 0)
+            {
+                MessageBox.Show("Order Amount must be greater than 1",
+                    "Warning",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+
             // Create connection to Database
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connString);
 
@@ -143,18 +172,18 @@ namespace SalesDBApp
         }// end of btnPlaceOrder_Click() event
 
 
-        /////////////////////////////////////////////////////////////
-        //         [Add Another Account] button click event
-        /////////////////////////////////////////////////////////////
+        /// <summary>
+        ///           [Add Another Account] button click event
+        /// </summary>
         private void btnAddAnotherAccount_Click(object sender, EventArgs e)
         {
             ClearForm();
         }
 
 
-        /////////////////////////////////////////////////////////////
-        //         clear form method
-        /////////////////////////////////////////////////////////////
+        /// <summary>
+        ///         clear form method
+        /// </summary>
         private void ClearForm()
         {
             txtCustomerID.Clear();
