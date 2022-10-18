@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\bin\Debug\SakesTestDB.exe.config
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\bin\Debug\SakesTestDB.exe
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\bin\Debug\SakesTestDB.pdb
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.Form1.resources
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.Form2.resources
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.Properties.Resources.resources
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.csproj.GenerateResource.cache
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.exe
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\obj\Debug\SakesTestDB.pdb
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\bin\Debug\Database1.mdf
+C:\Users\user\source\repos\CS\W05D1\SakesTestDB\SakesTestDB\bin\Debug\Database1_log.ldf
