@@ -65,6 +65,7 @@
             this.TxtRegNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "VehicleRegNo", true));
             this.TxtRegNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRegNo.Location = new System.Drawing.Point(218, 82);
+            this.TxtRegNo.MaxLength = 10;
             this.TxtRegNo.Name = "TxtRegNo";
             this.TxtRegNo.Size = new System.Drawing.Size(150, 22);
             this.TxtRegNo.TabIndex = 0;
@@ -84,6 +85,7 @@
             this.TxtMake.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "Make", true));
             this.TxtMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMake.Location = new System.Drawing.Point(218, 125);
+            this.TxtMake.MaxLength = 50;
             this.TxtMake.Name = "TxtMake";
             this.TxtMake.Size = new System.Drawing.Size(225, 22);
             this.TxtMake.TabIndex = 0;
@@ -93,6 +95,7 @@
             this.TxtEngine.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "Engine Size", true));
             this.TxtEngine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtEngine.Location = new System.Drawing.Point(218, 170);
+            this.TxtEngine.MaxLength = 10;
             this.TxtEngine.Name = "TxtEngine";
             this.TxtEngine.Size = new System.Drawing.Size(150, 22);
             this.TxtEngine.TabIndex = 0;
@@ -111,6 +114,7 @@
             this.TxtRate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "RentalPerDay", true));
             this.TxtRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRate.Location = new System.Drawing.Point(218, 258);
+            this.TxtRate.MaxLength = 8;
             this.TxtRate.Name = "TxtRate";
             this.TxtRate.Size = new System.Drawing.Size(150, 22);
             this.TxtRate.TabIndex = 0;
@@ -266,6 +270,7 @@
             this.BtnAdd.TabIndex = 4;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnUpdate
             // 
@@ -277,6 +282,7 @@
             this.BtnUpdate.TabIndex = 4;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnDelete
             // 
@@ -288,6 +294,7 @@
             this.BtnDelete.TabIndex = 4;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnCancel
             // 
@@ -299,6 +306,7 @@
             this.BtnCancel.TabIndex = 4;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnExit
             // 
@@ -322,6 +330,7 @@
             this.BtnSearch.TabIndex = 4;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // TxtRecordNum
             // 

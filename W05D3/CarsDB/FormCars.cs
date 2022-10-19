@@ -18,7 +18,7 @@ namespace CarsDB
         public FormCars()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -74,26 +74,84 @@ namespace CarsDB
         /// </summary>
         private void BtnLast_Click(object sender, EventArgs e)
         {
-            this.tblCarBindingSource.MoveLast();
-            UpdateRecordCount();
+
         }
 
 
-        // DATA MODIFICATION METHODS
+        /////////////////////////////////////////// DATA MODIFICATION METHODS
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            string rateString = TxtRate.Text;
+            decimal theRate = 0;
+            if (Decimal.TryParse(rateString, out theRate))
+            {
+                this.tblCarTableAdapter.Insert(
+                                            TxtRegDate.Text,
+                                            TxtMake.Text,
+                                            TxtEngine.Text,
+                                            DateTime.Parse(TxtRegDate.Text),
+                                            theRate,
+                                            CbxAvailable.Checked
+                                            );
+                UpdateData();
+                RefreshBiding();
+            }
+            else
+            {
+                MessageBox.Show("Rental per day must be a number.",
+                                "Alert",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning
+                                );
+                return;
+            }
+
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
 
+        ////////////////////////////////////////// FORM CONTROL METHODS
 
-        // FORM CONTROL METHODS
+
+        /// <summary>
+        ///         Method to open search form
+        /// </summary>
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            Form formSearch = new FormSearch();
+            formSearch.ShowDialog();
+        }
+
+
+        /// <summary>
+        ///         Method to cancel +changes to data fields
+        /// </summary>
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.tblCarBindingSource.CancelEdit();
+        }
+
 
         /// <summary>
         ///         Method for the Exit button to terminate the program.
         /// </summary>
         private void BtnExit_Click(object sender, EventArgs e)
         {
-            DialogResult exitResult = MessageBox.Show("Do you wish to exit?", 
-                                                "Warning", 
-                                                MessageBoxButtons.OKCancel, 
+            DialogResult exitResult = MessageBox.Show("Do you wish to exit?",
+                                                "Warning",
+                                                MessageBoxButtons.OKCancel,
                                                 MessageBoxIcon.Warning);
 
             if (exitResult == DialogResult.OK)
@@ -105,8 +163,7 @@ namespace CarsDB
 
 
 
-
-        // HELPER METHODS
+        //////////////////////////////////////// HELPER METHODS
 
         /// <summary>
         ///         Method to display the total record count 
@@ -119,6 +176,25 @@ namespace CarsDB
             int numOfRecords = this.tblCarBindingSource.Count;
 
             TxtRecordNum.Text = $"{currentRecord} of {numOfRecords}";
+        }
+
+
+        /// <summary>
+        ///         Method to clear data in form
+        /// </summary>
+        private void UpdateData()
+        {
+            this.tblCarBindingSource.MoveLast();
+            this.tblCarTableAdapter.Fill(this.hireDataSet1.tblCar);
+        }
+
+
+        /// <summary>
+        ///         Method to bind data from form
+        /// </summary>
+        private void RefreshBiding()
+        {
+            this.tblCarBindingSource.ResetBindings(false);
         }
 
     }
