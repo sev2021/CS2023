@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
+            this.numOrderAmount = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numOrderAmount = new System.Windows.Forms.NumericUpDown();
-            this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.btnAddAnotherAccount = new System.Windows.Forms.Button();
@@ -55,23 +55,28 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(270, 110);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Account";
             // 
-            // label1
+            // txtCustomerID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Customer Name:";
+            this.txtCustomerID.Location = new System.Drawing.Point(155, 67);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.ReadOnly = true;
+            this.txtCustomerID.Size = new System.Drawing.Size(100, 22);
+            this.txtCustomerID.TabIndex = 2;
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Location = new System.Drawing.Point(135, 31);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(121, 22);
+            this.txtCustomerName.TabIndex = 1;
             // 
             // label2
             // 
@@ -83,20 +88,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Customer ID:";
             // 
-            // txtCustomerName
+            // label1
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(135, 31);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(121, 22);
-            this.txtCustomerName.TabIndex = 1;
-            // 
-            // txtCustomerID
-            // 
-            this.txtCustomerID.Location = new System.Drawing.Point(155, 67);
-            this.txtCustomerID.Name = "txtCustomerID";
-            this.txtCustomerID.ReadOnly = true;
-            this.txtCustomerID.Size = new System.Drawing.Size(100, 22);
-            this.txtCustomerID.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customer Name:";
             // 
             // groupBox2
             // 
@@ -112,6 +112,30 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Create Order";
+            // 
+            // dtpOrderDate
+            // 
+            this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpOrderDate.Location = new System.Drawing.Point(135, 69);
+            this.dtpOrderDate.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.dtpOrderDate.MinDate = new System.DateTime(2005, 2, 1, 0, 0, 0, 0);
+            this.dtpOrderDate.Name = "dtpOrderDate";
+            this.dtpOrderDate.Size = new System.Drawing.Size(120, 22);
+            this.dtpOrderDate.TabIndex = 2;
+            this.dtpOrderDate.Value = new System.DateTime(2022, 10, 18, 11, 20, 1, 0);
+            // 
+            // numOrderAmount
+            // 
+            this.numOrderAmount.Location = new System.Drawing.Point(135, 32);
+            this.numOrderAmount.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.numOrderAmount.Name = "numOrderAmount";
+            this.numOrderAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numOrderAmount.Size = new System.Drawing.Size(120, 22);
+            this.numOrderAmount.TabIndex = 1;
             // 
             // label3
             // 
@@ -132,37 +156,6 @@
             this.label4.Size = new System.Drawing.Size(92, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Order Amount:";
-            // 
-            // numOrderAmount
-            // 
-            this.numOrderAmount.Location = new System.Drawing.Point(135, 32);
-            this.numOrderAmount.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.numOrderAmount.Minimum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.numOrderAmount.Name = "numOrderAmount";
-            this.numOrderAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numOrderAmount.Size = new System.Drawing.Size(120, 22);
-            this.numOrderAmount.TabIndex = 1;
-            this.numOrderAmount.Value = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            // 
-            // dtpOrderDate
-            // 
-            this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpOrderDate.Location = new System.Drawing.Point(135, 69);
-            this.dtpOrderDate.Name = "dtpOrderDate";
-            this.dtpOrderDate.Size = new System.Drawing.Size(120, 22);
-            this.dtpOrderDate.TabIndex = 2;
             // 
             // btnCreateAccount
             // 
@@ -198,6 +191,7 @@
             this.btnAddAnotherAccount.TabIndex = 4;
             this.btnAddAnotherAccount.Text = "Add Another Account";
             this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
+            this.btnAddAnotherAccount.Click += new System.EventHandler(this.btnAddAnotherAccount_Click);
             // 
             // btnAddFinish
             // 
@@ -223,7 +217,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NewCustomer";
             this.Text = "New Account and Order";
             this.groupBox1.ResumeLayout(false);
