@@ -56,6 +56,7 @@
             this.BtnSearch = new System.Windows.Forms.Button();
             this.TxtRecordNum = new System.Windows.Forms.TextBox();
             this.tblCarTableAdapter = new CarsDB.HireDataSetTableAdapters.tblCarTableAdapter();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             ((System.ComponentModel.ISupportInitialize)(this.tblCarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hireDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -88,7 +89,7 @@
             this.TxtMake.MaxLength = 50;
             this.TxtMake.Name = "TxtMake";
             this.TxtMake.Size = new System.Drawing.Size(225, 22);
-            this.TxtMake.TabIndex = 0;
+            this.TxtMake.TabIndex = 1;
             // 
             // TxtEngine
             // 
@@ -98,7 +99,7 @@
             this.TxtEngine.MaxLength = 10;
             this.TxtEngine.Name = "TxtEngine";
             this.TxtEngine.Size = new System.Drawing.Size(150, 22);
-            this.TxtEngine.TabIndex = 0;
+            this.TxtEngine.TabIndex = 2;
             // 
             // TxtRegDate
             // 
@@ -107,17 +108,17 @@
             this.TxtRegDate.Location = new System.Drawing.Point(218, 214);
             this.TxtRegDate.Name = "TxtRegDate";
             this.TxtRegDate.Size = new System.Drawing.Size(150, 22);
-            this.TxtRegDate.TabIndex = 0;
+            this.TxtRegDate.TabIndex = 3;
             // 
             // TxtRate
             // 
-            this.TxtRate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "RentalPerDay", true));
+            this.TxtRate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblCarBindingSource, "RentalPerDay", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "C2"));
             this.TxtRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRate.Location = new System.Drawing.Point(218, 258);
             this.TxtRate.MaxLength = 8;
             this.TxtRate.Name = "TxtRate";
             this.TxtRate.Size = new System.Drawing.Size(150, 22);
-            this.TxtRate.TabIndex = 0;
+            this.TxtRate.TabIndex = 4;
             // 
             // Header
             // 
@@ -137,7 +138,7 @@
             this.CbxAvailable.Location = new System.Drawing.Point(218, 308);
             this.CbxAvailable.Name = "CbxAvailable";
             this.CbxAvailable.Size = new System.Drawing.Size(15, 14);
-            this.CbxAvailable.TabIndex = 2;
+            this.CbxAvailable.TabIndex = 5;
             this.CbxAvailable.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -219,7 +220,7 @@
             this.BtnFirst.Location = new System.Drawing.Point(46, 374);
             this.BtnFirst.Name = "BtnFirst";
             this.BtnFirst.Size = new System.Drawing.Size(75, 26);
-            this.BtnFirst.TabIndex = 4;
+            this.BtnFirst.TabIndex = 6;
             this.BtnFirst.Text = "First";
             this.BtnFirst.UseVisualStyleBackColor = true;
             this.BtnFirst.Click += new System.EventHandler(this.BtnFirst_Click);
@@ -231,7 +232,7 @@
             this.BtnPrevious.Location = new System.Drawing.Point(127, 374);
             this.BtnPrevious.Name = "BtnPrevious";
             this.BtnPrevious.Size = new System.Drawing.Size(75, 26);
-            this.BtnPrevious.TabIndex = 4;
+            this.BtnPrevious.TabIndex = 7;
             this.BtnPrevious.Text = "Previous";
             this.BtnPrevious.UseVisualStyleBackColor = true;
             this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
@@ -243,7 +244,7 @@
             this.BtnNext.Location = new System.Drawing.Point(385, 374);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(75, 26);
-            this.BtnNext.TabIndex = 4;
+            this.BtnNext.TabIndex = 8;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
             this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
@@ -255,7 +256,7 @@
             this.BtnLast.Location = new System.Drawing.Point(466, 374);
             this.BtnLast.Name = "BtnLast";
             this.BtnLast.Size = new System.Drawing.Size(75, 26);
-            this.BtnLast.TabIndex = 4;
+            this.BtnLast.TabIndex = 9;
             this.BtnLast.Text = "Last";
             this.BtnLast.UseVisualStyleBackColor = true;
             this.BtnLast.Click += new System.EventHandler(this.BtnLast_Click);
@@ -267,8 +268,8 @@
             this.BtnAdd.Location = new System.Drawing.Point(508, 117);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(75, 26);
-            this.BtnAdd.TabIndex = 4;
-            this.BtnAdd.Text = "Add";
+            this.BtnAdd.TabIndex = 11;
+            this.BtnAdd.Text = "&Add";
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
@@ -279,8 +280,8 @@
             this.BtnUpdate.Location = new System.Drawing.Point(508, 81);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(75, 26);
-            this.BtnUpdate.TabIndex = 4;
-            this.BtnUpdate.Text = "Update";
+            this.BtnUpdate.TabIndex = 10;
+            this.BtnUpdate.Text = "&Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
             this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
@@ -291,8 +292,8 @@
             this.BtnDelete.Location = new System.Drawing.Point(508, 153);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(75, 26);
-            this.BtnDelete.TabIndex = 4;
-            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.TabIndex = 12;
+            this.BtnDelete.Text = "&Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
@@ -303,8 +304,8 @@
             this.BtnCancel.Location = new System.Drawing.Point(508, 252);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 26);
-            this.BtnCancel.TabIndex = 4;
-            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.TabIndex = 14;
+            this.BtnCancel.Text = "&Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
@@ -315,8 +316,8 @@
             this.BtnExit.Location = new System.Drawing.Point(508, 288);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(75, 26);
-            this.BtnExit.TabIndex = 4;
-            this.BtnExit.Text = "Exit";
+            this.BtnExit.TabIndex = 15;
+            this.BtnExit.Text = "E&xit";
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
@@ -327,8 +328,8 @@
             this.BtnSearch.Location = new System.Drawing.Point(508, 216);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(75, 26);
-            this.BtnSearch.TabIndex = 4;
-            this.BtnSearch.Text = "Search";
+            this.BtnSearch.TabIndex = 13;
+            this.BtnSearch.Text = "&Search";
             this.BtnSearch.UseVisualStyleBackColor = true;
             this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
@@ -346,12 +347,21 @@
             // 
             this.tblCarTableAdapter.ClearBeforeFill = true;
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(600, 25);
+            this.toolStrip1.TabIndex = 5;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
             // FormCars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(600, 414);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnExit);
@@ -415,6 +425,7 @@
         private HireDataSet hireDataSet1;
         private System.Windows.Forms.BindingSource tblCarBindingSource;
         private HireDataSetTableAdapters.tblCarTableAdapter tblCarTableAdapter;
+        private System.Windows.Forms.ToolStrip toolStrip1;
     }
 }
 
