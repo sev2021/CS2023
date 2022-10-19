@@ -147,7 +147,6 @@
             this.label1.Size = new System.Drawing.Size(186, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Vehicle registration number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -219,6 +218,7 @@
             this.BtnFirst.TabIndex = 4;
             this.BtnFirst.Text = "First";
             this.BtnFirst.UseVisualStyleBackColor = true;
+            this.BtnFirst.Click += new System.EventHandler(this.BtnFirst_Click);
             // 
             // BtnPrevious
             // 
@@ -230,28 +230,31 @@
             this.BtnPrevious.TabIndex = 4;
             this.BtnPrevious.Text = "Previous";
             this.BtnPrevious.UseVisualStyleBackColor = true;
+            this.BtnPrevious.Click += new System.EventHandler(this.BtnPrevious_Click);
             // 
             // BtnNext
             // 
             this.BtnNext.AutoSize = true;
             this.BtnNext.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNext.Location = new System.Drawing.Point(387, 374);
+            this.BtnNext.Location = new System.Drawing.Point(385, 374);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(75, 26);
             this.BtnNext.TabIndex = 4;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnLast
             // 
             this.BtnLast.AutoSize = true;
             this.BtnLast.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLast.Location = new System.Drawing.Point(468, 374);
+            this.BtnLast.Location = new System.Drawing.Point(466, 374);
             this.BtnLast.Name = "BtnLast";
             this.BtnLast.Size = new System.Drawing.Size(75, 26);
             this.BtnLast.TabIndex = 4;
             this.BtnLast.Text = "Last";
             this.BtnLast.UseVisualStyleBackColor = true;
+            this.BtnLast.Click += new System.EventHandler(this.BtnLast_Click);
             // 
             // BtnAdd
             // 
@@ -322,10 +325,10 @@
             // TxtRecordNum
             // 
             this.TxtRecordNum.Enabled = false;
-            this.TxtRecordNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRecordNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRecordNum.Location = new System.Drawing.Point(218, 374);
             this.TxtRecordNum.Name = "TxtRecordNum";
-            this.TxtRecordNum.Size = new System.Drawing.Size(150, 26);
+            this.TxtRecordNum.Size = new System.Drawing.Size(150, 22);
             this.TxtRecordNum.TabIndex = 0;
             // 
             // tblCarTableAdapter
