@@ -16,7 +16,7 @@ namespace CarsDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCars());
+            Application.Run(new FormCars());
         }
     }
 }
