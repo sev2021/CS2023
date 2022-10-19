@@ -293,7 +293,7 @@
             // 
             this.BtnCancel.AutoSize = true;
             this.BtnCancel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancel.Location = new System.Drawing.Point(508, 223);
+            this.BtnCancel.Location = new System.Drawing.Point(508, 252);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 26);
             this.BtnCancel.TabIndex = 4;
@@ -304,18 +304,19 @@
             // 
             this.BtnExit.AutoSize = true;
             this.BtnExit.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExit.Location = new System.Drawing.Point(508, 259);
+            this.BtnExit.Location = new System.Drawing.Point(508, 288);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(75, 26);
             this.BtnExit.TabIndex = 4;
             this.BtnExit.Text = "Exit";
             this.BtnExit.UseVisualStyleBackColor = true;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // BtnSearch
             // 
             this.BtnSearch.AutoSize = true;
             this.BtnSearch.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSearch.Location = new System.Drawing.Point(508, 187);
+            this.BtnSearch.Location = new System.Drawing.Point(508, 216);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(75, 26);
             this.BtnSearch.TabIndex = 4;
@@ -330,6 +331,7 @@
             this.TxtRecordNum.Name = "TxtRecordNum";
             this.TxtRecordNum.Size = new System.Drawing.Size(150, 22);
             this.TxtRecordNum.TabIndex = 0;
+            this.TxtRecordNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tblCarTableAdapter
             // 

@@ -21,6 +21,9 @@ namespace CarsDB
             
         }
 
+
+        // INITIAL FORM LOAD METHOD
+
         /// <summary>
         ///         Method for Form_Load event, runs when form loads
         /// </summary>
@@ -36,7 +39,8 @@ namespace CarsDB
         }
 
 
-        // Navigation buttons
+
+        // NAVIGATION BUTTONS EVENTS METHODS
 
         /// <summary>
         ///     Moethod to navigate to the first record
@@ -74,12 +78,48 @@ namespace CarsDB
             UpdateRecordCount();
         }
 
+
+        // DATA MODIFICATION METHODS
+
+
+
+
+        // FORM CONTROL METHODS
+
+        /// <summary>
+        ///         Method for the Exit button to terminate the program.
+        /// </summary>
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult exitResult = MessageBox.Show("Do you wish to exit?", 
+                                                "Warning", 
+                                                MessageBoxButtons.OKCancel, 
+                                                MessageBoxIcon.Warning);
+
+            if (exitResult == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+
+        } // end of BtnExit_Click
+
+
+
+
+        // HELPER METHODS
+
+        /// <summary>
+        ///         Method to display the total record count 
+        ///         and current record number each time one of 
+        ///         the navigation buttons Is used.
+        /// </summary>
         private void UpdateRecordCount()
         {
             int currentRecord = this.tblCarBindingSource.Position + 1;
             int numOfRecords = this.tblCarBindingSource.Count;
 
-            TxtRecordNum.Text = $"{ currentRecord } of { numOfRecords }";
+            TxtRecordNum.Text = $"{currentRecord} of {numOfRecords}";
         }
+
     }
 }
