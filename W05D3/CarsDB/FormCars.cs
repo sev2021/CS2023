@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace CarsDB
         public FormCars()
         {
             InitializeComponent();
-
+            CultureInfo.CurrentCulture = new CultureInfo("en-IE");
         }
 
 
@@ -39,11 +40,12 @@ namespace CarsDB
         }
 
 
-
-        // NAVIGATION BUTTONS EVENTS METHODS
+        //////////////////////////
+        ////////////////////////// NAVIGATION BUTTONS EVENTS METHODS
+        //////////////////////////
 
         /// <summary>
-        ///     Moethod to navigate to the first record
+        ///     Method to navigate to the first record
         /// </summary>
         private void BtnFirst_Click(object sender, EventArgs e)
         {
@@ -52,7 +54,7 @@ namespace CarsDB
         }
 
         /// <summary>
-        ///     Moethod to navigate to the previious record
+        ///     Method to navigate to the previious record
         /// </summary>
         private void BtnPrevious_Click(object sender, EventArgs e)
         {
@@ -61,7 +63,7 @@ namespace CarsDB
         }
 
         /// <summary>
-        ///     Moethod to navigate to the next record
+        ///     Method to navigate to the next record
         /// </summary>
         private void BtnNext_Click(object sender, EventArgs e)
         {
@@ -70,21 +72,33 @@ namespace CarsDB
         }
 
         /// <summary>
-        ///     Moethod to navigate to the last record
+        ///     Method to navigate to the last record
         /// </summary>
         private void BtnLast_Click(object sender, EventArgs e)
         {
-
+            this.tblCarBindingSource.MoveLast();
+            UpdateRecordCount();
         }
 
 
-        /////////////////////////////////////////// DATA MODIFICATION METHODS
+        //////////////////////////////////////////
+        ////////////////////////////////////////// DATA MODIFICATION BUTTONS
+        //////////////////////////////////////////
 
+        /// <summary>
+        ///         Method to pupdate the record
+        /// </summary>
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-
+            this.tblCarBindingSource.EndEdit();
+            this.tblCarTableAdapter.Update(this.hireDataSet1.tblCar);
+            MessageBox.Show("Updates applied");
         }
 
+
+        /// <summary>
+        ///         Method to add new record to Database
+        /// </summary>
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             string rateString = TxtRate.Text;
@@ -92,7 +106,7 @@ namespace CarsDB
             if (Decimal.TryParse(rateString, out theRate))
             {
                 this.tblCarTableAdapter.Insert(
-                                            TxtRegDate.Text,
+                                            TxtRegNo.Text,
                                             TxtMake.Text,
                                             TxtEngine.Text,
                                             DateTime.Parse(TxtRegDate.Text),
@@ -112,18 +126,35 @@ namespace CarsDB
                 return;
             }
 
-
         }
 
+
+        /// <summary>
+        ///         Method to delete record from Database
+        /// </summary>
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-
+            string rateString = TxtRate.Text;
+            decimal theRate = 0;
+            if (Decimal.TryParse(rateString, out theRate))
+            {
+                this.tblCarTableAdapter.Delete(
+                                            TxtRegNo.Text,
+                                            TxtMake.Text,
+                                            TxtEngine.Text,
+                                            DateTime.Parse(TxtRegDate.Text),
+                                            theRate,
+                                            CbxAvailable.Checked
+                                            );
+                UpdateData();
+                RefreshBiding();
+            }
         }
 
 
-
-        ////////////////////////////////////////// FORM CONTROL METHODS
-
+        //////////////////////////////////////////
+        ////////////////////////////////////////// FORM CONTROL BUTTONS
+        //////////////////////////////////////////
 
         /// <summary>
         ///         Method to open search form
@@ -162,8 +193,9 @@ namespace CarsDB
         } // end of BtnExit_Click
 
 
-
-        //////////////////////////////////////// HELPER METHODS
+        /////////////////////////////////////////// 
+        /////////////////////////////////////////// HELPER METHODS
+        /////////////////////////////////////////// 
 
         /// <summary>
         ///         Method to display the total record count 
@@ -180,7 +212,8 @@ namespace CarsDB
 
 
         /// <summary>
-        ///         Method to clear data in form
+        ///         Method to update TableAdapter to most revent data
+        ///         to be called after any insert, update or delete
         /// </summary>
         private void UpdateData()
         {
@@ -190,11 +223,13 @@ namespace CarsDB
 
 
         /// <summary>
-        ///         Method to bind data from form
+        ///         Method to reset tblCarBindingSource bindings
+        ///         to be called after any insert, update or delete
         /// </summary>
         private void RefreshBiding()
         {
             this.tblCarBindingSource.ResetBindings(false);
+            UpdateRecordCount();
         }
 
     }
